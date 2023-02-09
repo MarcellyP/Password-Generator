@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Itim&family=Orbitron&family=Playfair+Display:wght@500&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Password Generator</title>
+</head>
+
+<body>
+  <section class="all">
+    <input class="inputPassword" type="text">
+
+    <div class="div">
+      <input class="inputLength" type="range" min="6" max="24">
+      <label class="labelLengthId" for="labelLengthId"></label>
+    </div>
+
+
+    <div class="div">
+      <input class="inputUppercase" type="checkbox">
+      <label for="labelUppercaseId">Uppercase</label>
+    </div>
+
+    <div class="div">
+      <input class="inputLowercase" type="checkbox">
+      <label for="labelLowercaseId">Lowercase</label>
+    </div>
+
+    <div class="div">
+      <input class="inputNumbers" type="checkbox">
+      <label for="labelNumberId">Numbers</label>
+    </div>
+
+    <div class="div">
+      <input class="inputSymbols" type="checkbox">
+      <label for="labelSymbolsId">Symbols</label>
+    </div>
+
+    <button class="btnGenerate">Generate Password</button>
+    <button class="btnCopy">Copy Password</button>
+    <div class="alert"></div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
